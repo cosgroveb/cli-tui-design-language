@@ -1,10 +1,10 @@
 # Terminal Design Passes
 
-Use these passes to focus a review or a rewrite.
+Use these passes to critique or tighten a CLI or TUI design.
 
 ## `tree`
 
-Tighten command tree shape, nouns, verbs, and sibling consistency.
+Check command tree shape, nouns, verbs, and sibling consistency.
 
 ## `help`
 
@@ -12,7 +12,7 @@ Write or critique usage text, examples, option naming, and command summaries.
 
 ## `streams`
 
-Audit `stdout`, `stderr`, exit codes, and pipeline safety.
+Check `stdout`, `stderr`, exit codes, and pipeline safety.
 
 ## `machine`
 
@@ -28,23 +28,23 @@ Design long-running feedback for TTY and non-TTY contexts.
 
 ## `layout`
 
-Critique panes, tables, detail views, density, and hierarchy.
+Check panes, tables, detail views, density, and hierarchy.
 
 ## `keys`
 
-Audit navigation, keybindings, conflicts, and discoverability.
+Check navigation, keybindings, conflicts, and discoverability.
 
 ## `focus`
 
-Audit focus visibility, selection semantics, and mode visibility.
+Check focus visibility, selection semantics, and mode visibility.
 
 ## `search`
 
-Design search scope, incremental behavior, filter state, and no-results behavior.
+Check search scope, incremental behavior, filter state, and no-results behavior.
 
 ## `status`
 
-Audit status bars, inline state, background-task visibility, and empty states.
+Check status bars, inline state, background-task visibility, and empty states.
 
 ## `a11y`
 

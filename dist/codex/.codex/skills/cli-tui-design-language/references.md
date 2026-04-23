@@ -1,6 +1,8 @@
 # References
 
-## Standards And Official Guidance
+Use these sources to check whether a rule comes from a standard, a convention, or this repo.
+
+## Standards and official guidance
 
 - POSIX Utility Conventions
   - Option and operand syntax, `--`, short options, and ordering
@@ -16,10 +18,10 @@
   - https://no-color.org/
 - WCAG2ICT 2.2
   - W3C guidance for applying WCAG to non-web software
-  - Informative, not normative
+  - Informative guidance, not a conformance standard
   - https://www.w3.org/TR/wcag2ict-22/
 
-## W3C Understanding And APG
+## W3C understanding and APG
 
 - WAI APG Keyboard Interface
   - Composite widgets, focus, selection
@@ -33,7 +35,7 @@
 - WCAG Understanding: Focus Not Obscured
   - https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum
 
-## Official Exemplar Docs
+## Reference docs
 
 - CLIG
   - Modern CLI conventions and examples
@@ -60,8 +62,8 @@
   - Screen-reader and host-terminal constraints
   - https://support.apple.com/en-tj/guide/terminal/trml1020/mac
 
-## Source Labels Used In This Skill
+## Source labels used in this skill
 
-- `Standard-backed`: grounded in standards or official normative syntax rules.
-- `Convention-backed`: grounded in official platform docs, widely-used CLI/TUI guidance, or de facto conventions.
-- `House style`: an opinionated rule in this repo. Useful, but not claimed as external authority.
+- `Standard-backed`: from standards or official syntax rules
+- `Convention-backed`: from platform docs, common CLI/TUI guidance, or de facto conventions
+- `Judgment-backed`: a rule from this skill's own reasoning, not external authority

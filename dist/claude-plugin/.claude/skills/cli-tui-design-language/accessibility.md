@@ -1,6 +1,6 @@
 # Terminal Accessibility
 
-WCAG2ICT is useful here, with one boundary: it is W3C guidance for applying WCAG to non-web software, not a conformance target of its own.
+WCAG2ICT is W3C guidance for applying WCAG to non-web software. Use it alongside WCAG. It is not a separate conformance target.
 
 ## Keyboard
 
@@ -13,37 +13,37 @@ WCAG2ICT is useful here, with one boundary: it is W3C guidance for applying WCAG
 
 - `Standard-backed`: Keyboard focus must be visible.
 - `Standard-backed`: Focus must not be fully obscured by app chrome or overlays.
-- `Standard-backed`: Focus indicators and critical state indicators need sufficient contrast.
-- `House style`: Keep focus, selection, hover, and active mode visually distinct even in monochrome.
+- `Standard-backed`: Focus indicators and critical state indicators must have sufficient contrast.
+- `Judgment-backed`: Keep focus, selection, hover, and active mode visually distinct even in monochrome.
 
-## Status And Announcements
+## Status and announcements
 
 - `Standard-backed`: Status updates should not steal focus just to be announced.
 - `Standard-backed`: If the platform can expose status programmatically, use it for result counts, background task state, and completion messages.
-- `House style`: A terminal app should still say the status in plain language on screen, not only through host APIs.
+- `Judgment-backed`: Show status in plain language on screen and through host APIs.
 
-## Text, Contrast, And Resize
+## Text, contrast, and resize
 
 - `Standard-backed`: Text must remain usable when users enlarge terminal text or zoom the host terminal.
 - `Standard-backed`: Critical text and UI state indicators need sufficient contrast.
-- `House style`: Treat low-contrast chrome as optional. Treat low-contrast commands, counts, errors, and focus rings as bugs.
+- `Judgment-backed`: Decorative chrome can be lower contrast. Commands, counts, errors, and focus rings still need to read clearly.
 
-## Color And No-Color
+## Color and no-color
 
 - `Convention-backed`: Honor `NO_COLOR` if color is enabled by default.
 - `Convention-backed`: `NO_COLOR` does not require removal of bold, underline, or reverse video.
-- `House style`: Never rely on color alone for focus, severity, selection, or mode. Add text, shape, or position.
+- `Judgment-backed`: Never rely on color alone for focus, severity, selection, or mode. Add text, shape, or position.
 
-## Keybinding Conflicts
+## Keybinding conflicts
 
 - `Convention-backed`: Expect conflicts with terminal emulators, window managers, and screen readers.
-- `Convention-backed`: Avoid assuming `Alt`, `Ctrl+Option`, mouse reporting, or clipboard shortcuts are always available to the app.
-- `House style`: Document a safe baseline keymap and make higher-risk bindings rebindable.
+- `Convention-backed`: Do not assume `Alt`, `Ctrl+Option`, mouse reporting, or clipboard shortcuts are always available to the app.
+- `Judgment-backed`: Document a safe baseline keymap and make higher-risk bindings rebindable.
 
-## Test Pass
+## Checks
 
 - `Convention-backed`: Test keyboard-only.
 - `Convention-backed`: Test with a screen reader where the platform supports one.
 - `Convention-backed`: Test large text or zoom.
 - `Convention-backed`: Test high-contrast or low-color conditions.
-- `House style`: Test one run with color disabled and one run with a narrow terminal before declaring the design done.
+- `Judgment-backed`: Test one run with color disabled and one run in a narrow terminal before calling the design done.
