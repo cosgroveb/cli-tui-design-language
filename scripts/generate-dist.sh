@@ -19,5 +19,4 @@ mkdir -p "$dist/claude-plugin/.claude-plugin"
 cp "$root/.claude-plugin/plugin.json" "$dist/claude-plugin/.claude-plugin/plugin.json"
 cp "$root/.claude-plugin/marketplace.json" "$dist/claude-plugin/.claude-plugin/marketplace.json"
 
-copy_skill_dir "$dist/codex/.codex/skills/$skill_name"
 copy_skill_dir "$dist/agents/.agents/skills/$skill_name"

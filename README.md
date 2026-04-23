@@ -1,9 +1,8 @@
 # CLI TUI design language[^1]
 
-This repo packages the same terminal design skill in three places:
+This repo packages the same terminal design skill in two places:
 
 - Claude plugin bundle
-- Codex skill bundle
 - `.agents` skill bundle
 
 The source of truth is [`skills/cli-tui-design-language`](skills/cli-tui-design-language).
@@ -31,7 +30,6 @@ Build output:
 
 - `dist/claude-plugin/.claude/skills/cli-tui-design-language`
 - `dist/claude-plugin/.claude-plugin/{plugin.json,marketplace.json}`
-- `dist/codex/.codex/skills/cli-tui-design-language`
 - `dist/agents/.agents/skills/cli-tui-design-language`
 
 ## Editing

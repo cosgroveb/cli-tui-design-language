@@ -21,12 +21,11 @@ jobs:
       - name: Build dist bundles
         run: make dist
 
-      - name: Verify expected bundle families
+      - name: Verify expected build output
         run: |
           test -f dist/claude-plugin/.claude-plugin/plugin.json
           test -f dist/claude-plugin/.claude-plugin/marketplace.json
           test -f dist/claude-plugin/.claude/skills/cli-tui-design-language/SKILL.md
-          test -f dist/codex/.codex/skills/cli-tui-design-language/SKILL.md
           test -f dist/agents/.agents/skills/cli-tui-design-language/SKILL.md
 
       - name: Verify dist is current
