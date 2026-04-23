@@ -1,0 +1,11 @@
+{
+  "name": "cli-tui-design-language",
+  "description": "Design and critique terminal interfaces, from command trees to TUI layout.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Brian Cosgrove",
+    "email": "cosgroveb@gmail.com"
+  },
+  "repository": "https://github.com/bcosgrove/cli-tui-design-language",
+  "skills": "./.claude/skills"
+}
