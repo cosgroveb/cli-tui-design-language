@@ -1,6 +1,6 @@
 # Examples
 
-## Command help
+## Command Help
 
 ```text
 $ acme deploy --help
@@ -24,7 +24,7 @@ Examples:
   acme deploy build-1842 --env staging --json
 ```
 
-## Human output and machine output
+## Human Output And Machine Output
 
 ```text
 $ acme jobs show 1842
@@ -40,7 +40,7 @@ $ acme jobs show 1842 --json
 {"id":1842,"state":"running","started_at":"2026-04-22T21:08:41Z","step":"migrate-db"}
 ```
 
-## stderr and progress
+## Stderr And Progress
 
 ```text
 $ acme backup create --wait > backup.json
@@ -51,9 +51,9 @@ Uploading chunks 48/48
 Backup complete.
 ```
 
-The primary result goes to `backup.json` on `stdout`. Progress stays on `stderr`.
+`backup.json` receives the primary result on `stdout`. Progress stays on `stderr`.
 
-## Error and recovery
+## Error And Recovery
 
 ```text
 $ acme deploy build-1842
@@ -67,7 +67,7 @@ acme jobs logs: job 999999 was not found
 Try: acme jobs list --state failed
 ```
 
-## Non-interactive behavior
+## Non-Interactive Behavior
 
 ```text
 $ acme auth login < token.txt
@@ -75,7 +75,7 @@ acme auth login: stdin is not a TTY
 Use: acme auth login --token-stdin
 ```
 
-## TUI layout
+## TUI Layout
 
 ```text
 +--------------------------------------------------------------------------------+
@@ -93,7 +93,7 @@ Use: acme auth login --token-stdin
 +--------------------------------------------------------------------------------+
 ```
 
-## Keybindings and mode visibility
+## Keybindings And Mode Visibility
 
 ```text
 Mode: FILTER
@@ -108,7 +108,7 @@ Esc          leave current mode
 ?            key help
 ```
 
-## Search and empty state
+## Search And Empty State
 
 ```text
 Search: replica
@@ -118,7 +118,7 @@ No jobs match "replica".
 Clear search with Esc.
 ```
 
-## No-color behavior
+## No-Color Behavior
 
 ```text
 $ NO_COLOR=1 acme jobs tui
@@ -131,7 +131,7 @@ $ NO_COLOR=1 acme jobs tui
  Error: none
 ```
 
-## Accessibility-sensitive state
+## Accessibility-Sensitive State
 
 ```text
 Mode: READ-ONLY
@@ -140,4 +140,4 @@ Selection: 2 jobs
 Background task: syncing logs
 ```
 
-Do not rely on color alone to show this state.
+This state should not rely on color alone.

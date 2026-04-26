@@ -17,7 +17,7 @@ Reject these by default.
 
 - A pane you can enter with keyboard but cannot leave with keyboard.
 - Using the same visual treatment for focus and selection.
-- Modes that change key behavior without showing the current mode on screen.
+- Hidden modes. The keys change behavior, but the screen never says why.
 - Search that silently keeps filtering after the search box closes.
 - Empty panes that say nothing about why they are empty.
 - Status bars that cover focused content or carry the only error message.
