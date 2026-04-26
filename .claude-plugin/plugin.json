@@ -1,6 +1,6 @@
 {
   "name": "cli-tui-design-language",
-  "description": "Design and critique terminal interfaces, from command trees to TUI layout.",
+  "description": "Terminal design language for CLI and TUI UX. One skill with focused doctrine, anti-patterns, references, and examples.",
   "version": "0.1.0",
   "author": {
     "name": "Brian Cosgrove",

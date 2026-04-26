@@ -21,7 +21,7 @@ jobs:
       - name: Build dist bundles
         run: make dist
 
-      - name: Verify expected build output
+      - name: Verify expected bundle families
         run: |
           test -f dist/claude-plugin/.claude-plugin/plugin.json
           test -f dist/claude-plugin/.claude-plugin/marketplace.json
@@ -55,5 +55,5 @@ jobs:
             exit 0
           fi
           git add dist
-          git commit -m "Update generated bundles"
+          git commit -m "Update generated bundles [skip ci]"
           git push

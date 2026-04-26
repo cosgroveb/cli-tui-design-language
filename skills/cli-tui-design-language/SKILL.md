@@ -1,21 +1,23 @@
 ---
 name: cli-tui-design-language
-description: Design and critique terminal software, including CLI command trees, help text, output streams, prompts, errors, progress, TUI layout, keybindings, search, status bars, no-color behavior, and accessibility.
+description: Design or critique terminal software. Use for CLI command trees, help text, flags, stdout/stderr, prompts, errors, progress, TUI layout, keybindings, search, no-color behavior, and terminal accessibility.
 ---
 
-Use this skill for terminal UX work. If the problem is general app UX, use a different skill.
+Use this skill when the work is terminal UX, not generic app UX.
 
-- Start with [cli-design.md](cli-design.md) for command trees, naming, help, flags, streams, machine modes, prompts, errors, and progress.
-- Use [tui-design.md](tui-design.md) for panes, tables, detail views, navigation, keybindings, focus, search, status bars, and empty states.
-- Check [accessibility.md](accessibility.md) for keyboard use, focus visibility, contrast, no-color behavior, and terminal-specific accessibility constraints.
-- Read [anti-patterns.md](anti-patterns.md) before polishing output. It covers common terminal UX mistakes.
-- Pull from [examples.md](examples.md) when you need concrete help text, output, status, or layout examples.
-- Use [commands.md](commands.md) for quick design passes.
-- Check [references.md](references.md) when you need to confirm whether a rule is standard-backed, convention-backed, or judgment-backed.
+- Read [cli-design.md](cli-design.md) for command trees, naming, help, flags, streams, machine modes, prompts, errors, and progress.
+- Read [tui-design.md](tui-design.md) for panes, tables, detail views, navigation, keybindings, focus, search, status bars, and empty states.
+- Read [accessibility.md](accessibility.md) for keyboard use, focus visibility, contrast, no-color behavior, and terminal-specific accessibility constraints.
+- Read [anti-patterns.md](anti-patterns.md) before polishing output. It captures common terminal UX failures.
+- Read [examples.md](examples.md) when the design needs concrete help text, output, status, or layout examples.
+- Read [commands.md](commands.md) when you need a fast design pass.
+- Read [references.md](references.md) when you need to check what is standard-backed, convention-backed, or house style.
+
+Core doctrine:
 
 - Keep CLI and TUI guidance separate when their tradeoffs differ.
 - Treat machine-readable output as an explicit contract.
 - Put human messaging on `stderr`, primary output on `stdout`.
 - Do not depend on color alone for state, focus, or severity.
 - Keep focus, selection, and mode visibly distinct.
-- Label each rule as `Standard-backed`, `Convention-backed`, or `Judgment-backed`.
+- Label standards as standards, conventions as conventions, and house style as house style.

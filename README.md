@@ -1,17 +1,17 @@
-# CLI TUI design language[^1]
+# CLI TUI Design Language
 
-This repo packages the same terminal design skill in two places:
+This repo contains the source for one terminal design skill and packages it for two targets:
 
 - Claude plugin bundle
 - `.agents` skill bundle
 
 The source of truth is [`skills/cli-tui-design-language`](skills/cli-tui-design-language).
 
-## Source files
+## Source Files
 
 - `SKILL.md`: entry point
-- `cli-design.md`: CLI design notes
-- `tui-design.md`: TUI design notes
+- `cli-design.md`: CLI design guidance
+- `tui-design.md`: TUI design guidance
 - `accessibility.md`: terminal accessibility guidance
 - `anti-patterns.md`: failure modes to reject
 - `commands.md`: design workflow commands
@@ -34,25 +34,25 @@ Build output:
 
 ## Editing
 
-Edit these source files:
+Only edit the source files here:
 
 - `skills/cli-tui-design-language/**`
 - `.claude-plugin/**`
 
 GitHub Actions regenerates and commits `dist/` on pushes to `main`.
 
-Pull requests fail if local source changes would produce different generated files.
+Pull requests check that `make dist` produces the expected output and that generated files stay in sync with the source.
 
 ## Scope
 
-This repo covers terminal UX:
+This repo is only for terminal UX:
 
 - CLI command trees
 - command naming
 - help text
 - flags and arguments
-- stdout and stderr
-- human and machine output
+- stdout vs stderr
+- human vs machine output
 - prompts and non-interactive behavior
 - errors and recovery
 - progress and long-running feedback
@@ -63,5 +63,3 @@ This repo covers terminal UX:
 - search, filter, status bars, empty states
 - color and no-color behavior
 - terminal accessibility
-
-[^1]: Idea borrowed from [impeccable](https://github.com/pbakaus/impeccable).
