@@ -29,6 +29,7 @@ jobs:
           test -f dist/agents/.agents/skills/cli-tui-design-language/SKILL.md
 
       - name: Verify dist is current
+        if: github.event_name == 'pull_request'
         run: git diff --exit-code
 
   sync-dist:
